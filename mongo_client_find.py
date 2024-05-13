@@ -3,7 +3,7 @@ from random import randint
 
 client = MongoClient('localhost:27017')
 
-db = client.tse
+db = client.test
 
 fivestar = db.reviews.find_one({'rating': 5})
 

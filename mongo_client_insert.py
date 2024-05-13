@@ -3,7 +3,7 @@ from random import randint
 
 client = MongoClient('localhost:27017')
 
-db = client.tse
+db = client.test
 
 names = ['Kitchen','Animal','State', 'Tastey', 'Big','City','Fish', 'Pizza','Goat', 'Salty','Sandwich','Lazy','Fun']
 
