@@ -6,7 +6,7 @@ AUTH = ("neo4j", "password")
 
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
 
-    records, summary, keys = driver.execute_query("MATCH (p:Person) RETURN p.name AS name")
+    records, summary, keys = driver.execute_query("MATCH (p:PERSON) RETURN p.firstname AS name")
 
     for record in records:
         print(record["name"])
